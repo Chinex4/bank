@@ -66,11 +66,6 @@
 
                             </div> <!-- end col -->
                         </div> <!-- end row -->
-                        <div class="row justify-content-end" aria-label="Page navigation">
-                            <div class="pagination ">
-                                {{-- {{ $transactions->links() }} --}}
-                            </div>
-                        </div>
                     </div>
                     <!-- container-fluid -->
 
