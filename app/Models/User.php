@@ -29,6 +29,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'image',
         'address',
         'city',
+        'amount',
         'state',
         'zip_code',
         'phone',
@@ -54,8 +55,8 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
 
-    public function order()
+    public function transactions()
     {
-        $this->hasMany(Order::class);
+      return  $this->hasMany(Transaction::class);
     }
 }

@@ -47,7 +47,7 @@
 </x-guest-layout> --}}
 
 <!-- Session Status -->
-<x-auth-session-status class="mb-4" :status="session('status')" />
+<x-auth-session-status class="mb-4 text-red-700" :status="session('status')" />
 <div class="max-w-80 h-80 p-4 bg-white shadow-2xl rounded-xl md:hidden hidden sign-on">
     <form action="{{ route('login') }}" method="post">
         @csrf
@@ -56,13 +56,13 @@
                     <label for="#" class="text-sm mb-1">Email</label>
                     <input type="email" placeholder="e.g JoeDavid4@gmail.com" name="email" :value="old('email')" required autofocus autocomplete="username"
                     class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                    <x-input-error :messages="$errors->get('email')" class="mt-2 text-red-700" />
                 </div>
                 <div class="flex flex-col">
                     <label for="#" class="text-sm mb-1">Password</label>
                     <input type="password" placeholder="Enter Your Password"  name="password" required autocomplete="current-password"
                     class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    <x-input-error :messages="$errors->get('password')" class="mt-2 text-red-700" />
                 </div>
         </div>
         <div class="flex space-x-1 mt-2">

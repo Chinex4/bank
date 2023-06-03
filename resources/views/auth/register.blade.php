@@ -168,7 +168,7 @@
       <div class="w-full space-y-6 md:space-y-0  md:space-x-6 md:flex">
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Date of Birth (MM/DD/YYY)</label>
-          <input type="text" placeholder="E.g 15/10/1965" name="date_birth" :value="old('date_birth')" required autofocus autocomplete="date_birth"
+          <input type="date" placeholder="E.g 15/10/1965" name="date_birth" :value="old('date_birth')" required autofocus autocomplete="date_birth"
             class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
             <x-input-error :messages="$errors->get('date_birth')" class="mt-2" />
         </div>

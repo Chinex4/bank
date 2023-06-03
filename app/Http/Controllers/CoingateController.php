@@ -21,7 +21,6 @@ class CoingateController extends Controller
                 'reference'=>$request->input('reference'),
                 'email' => $request->input('email'),
                 'amount' => $request->input('amount'),
-                'amount' => $request->input('amount'),
             ]);
             // $pay->save();
 
