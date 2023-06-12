@@ -23,7 +23,7 @@
                             </h1>
                             <p class=" text-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-indigo-800">
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-purple-800">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
                                 </svg>
@@ -50,13 +50,13 @@
                             @csrf
                             <div class="mt-10 sm:mx-auto sm:w-full py-10 sm:max-w-sm overflow-hidden shadow-slate-400 rounded-lg shadow-lg px-2">
                                 <div class="text-center">
-                                    <h2 class="text-indigo-600 text-4xl">Make Payment</h2>
+                                    <h2 class="text-purple-600 text-4xl">Make Payment</h2>
                                 </div>
                                 <div>
                                     <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
                                     <div class="mt-2">
                                         <input id="email" name="email" type="email" autocomplete="email" required
-                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
                                     </div>
                                 </div>
                                 <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}">
@@ -66,12 +66,12 @@
                                     <label for="amount" class="block text-sm font-medium leading-6 text-gray-900">Amount</label>
                                     <div class="mt-2">
                                         <input id="amount" name="amount" type="text" required
-                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
                                     </div>
                                 </div>
                                 <div class="pt-5">
                                     <input type="submit" value="Pay"
-                                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                        class="flex w-full justify-center rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
                                 </div>
                             </div>
                         </form>

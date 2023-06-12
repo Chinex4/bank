@@ -40,7 +40,7 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
+            <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
                 {{ __('Already registered?') }}
             </a>
 
@@ -120,10 +120,10 @@
     </div>
 
     <div class="space-y-3">
-      <h1 class="font-bold text-indigo-800 text-xl">9 Month Certificate of Deposit</h1>
+      <h1 class="font-bold text-purple-800 text-xl">9 Month Certificate of Deposit</h1>
       <div>
         <p class="text-xs">Secure Application</p>
-        <hr class="text-slate-900">
+        <hr class="text-slate-700">
       </div>
     </div>
 
@@ -146,7 +146,7 @@
   </section>
 
   <section class="max-w-full my-4 mx-4">
-    <h1 class="text-xl text-indigo-700 font-bold">YOUR PERSONAL INFORMATION</h1>
+    <h1 class="text-xl text-purple-700 font-bold">YOUR PERSONAL INFORMATION</h1>
     <hr class="mt-2">
 
     <form method="POST" action="{{ route('register') }}" class="flex flex-col mt-8 space-y-6">
@@ -155,13 +155,13 @@
         <div class="flex flex-col md:flex-1">
           <label for="firstname">First Name</label>
           <input type="text" name="name" placeholder="E.g John" :value="old('name')" required autofocus autocomplete="name"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Last Name</label>
           <input type="text" placeholder="E.g Doe" name="lastname" :value="old('lastname')" required autofocus autocomplete="lastname"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('lastname')" class="mt-2" />
         </div>
       </div>
@@ -169,13 +169,13 @@
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Date of Birth (MM/DD/YYY)</label>
           <input type="date" placeholder="E.g 15/10/1965" name="date_birth" :value="old('date_birth')" required autofocus autocomplete="date_birth"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('date_birth')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Social Security Number or ITIN</label>
           <input type="text" placeholder="Social Security Number or ITIN" name="itin" :value="old('itin')" required autofocus autocomplete="itin"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('itin')" class="mt-2" />
         </div>
       </div>
@@ -184,19 +184,19 @@
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Address</label>
           <input type="text" placeholder="Apt./Ste./Other (Optional)" name="address" :value="old('address')" required autofocus autocomplete="address"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('address')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
           <label for="firstname">City</label>
           <input type="text" placeholder="Your City Here" name="city" :value="old('city')" required autofocus autocomplete="city"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('city')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
           <label for="firstname">State</label>
           <input type="text" placeholder="Your State Here" name="state" :value="old('state')" required autofocus autocomplete="state"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('state')" class="mt-2" />
         </div>
       </div>
@@ -205,19 +205,19 @@
         <div class="flex flex-col md:flex-1">
           <label for="firstname">ZIP Code</label>
           <input type="text"  placeholder="Your ZIP Code Here" name="zip_code" :value="old('zip_code')" required autofocus autocomplete="zip_code"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('zip_code')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Phone Number</label>
           <input type="text" placeholder="Phone Number" name="phone" :value="old('phone')" required autofocus autocomplete="phone"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('phone')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Email Address</label>
           <input type="email" placeholder="Your Email Here" type="email" name="email" :value="old('email')" required autocomplete="username"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
       </div>
@@ -225,18 +225,18 @@
         <div class="flex flex-col md:flex-1">
           <label for="firstname">Password</label>
           <input type="password" max="6" placeholder="Create Your Password" name="password" required autocomplete="new-password"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
         <div class="flex flex-col md:flex-1">
             <label for="firstname">Confirm Password</label>
           <input type="password" placeholder="Confirm Your Password" name="password_confirmation" required autocomplete="new-password"
-            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-500">
+            class="border px-4 py-2 w-full rounded-md bg-slate-100 focus:outline-none focus:ring-1 focus:ring-purple-700 hover:border-purple-500">
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
          </div>
       </div>
       <div>
-        <button type="submit" class="w-full md:w-32 bg-indigo-700 hover:bg-indigo-500 text-white rounded-md py-3">Submit</button>
+        <button type="submit" class="w-full md:w-32 bg-purple-700 hover:bg-purple-500 text-white rounded-md py-3">Submit</button>
       </div>
     </form>
   </section>
@@ -268,10 +268,10 @@
         Deposit products and services are offered by Citibank, N.A., Member FDIC
       </p>
       <div class="text-center space-x-4">
-        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-purple-700"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-purple-700"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-purple-700"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-purple-700"><ion-icon name="logo-whatsapp"></ion-icon></a>
       </div>
     </div>
   </footer>
