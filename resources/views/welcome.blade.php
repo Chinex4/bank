@@ -148,7 +148,7 @@
   <!-- First Section -->
   <section class="p-2">
     <header class="max-w-full flex justify-between items-center">
-      <img src="images/logo.png" alt="Ascent bank logo" class="img" />
+      <img src="images/ascend.png" alt="Ascent bank logo" class="img" />
       <div class="grid place-items-center">
         <img src="images/atm.png" alt="atm locator" class="atm w-10 h-10" />
         <p class="atm-b">ATM / Branch</p>
